@@ -1,0 +1,10 @@
+# Подключение Redmine к PostgreSQL (пароль задаётся при развёртывании, в репозиторий не помещается)
+production:
+  adapter: postgresql
+  database: redmine
+  host: 127.0.0.1
+  port: 5432
+  username: redmine
+  password: "<пароль роли redmine>"
+  encoding: utf8
+  schema_search_path: public
